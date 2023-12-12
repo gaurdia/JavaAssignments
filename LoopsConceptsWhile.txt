@@ -1,0 +1,83 @@
+package com.Divya;
+
+public class LoopsConcepts {
+
+    public static void main(String[] args) {
+
+    	 //    WAP to print 10 to 1 using while loop 
+
+
+		
+		  int l = 10;
+		 
+		  while (l<=10){
+		  
+		  System.out.println(l); 
+		   l=l-1; 
+		   }
+		 
+        //Write a program in Java to print "Hello World" ten times using while loop
+        int i=1;
+        while (i<=10){
+         System.out.println("hello world");
+         i++;
+         
+      }
+        
+        //5. Write a program in Java to print all the multiplication of 5 from 1 to 100 using while loop
+int a = 5;
+    	
+        while (a<=100){
+	             
+   	          System.out.println(a); 
+   	          a=a+5;
+  	         }
+      //  8. Print A-Z , a-z, 0-9 with  the respective ASCII numbers the console one using while loop
+char d = 'A';
+    	
+        while (d<=90){
+	             
+   	          System.out.println(d); 
+   	          d++;
+   	        //  a=a+5;
+  	         }
+        char c='a';
+        while (c<=122){
+            
+ 	          System.out.println(c); 
+ 	          c++;
+ 	       
+	         }
+        char c1='0';
+        while (c1<=57){
+            
+ 	          System.out.println(c1); 
+ 	          c1++;
+ 	       
+	         }
+        
+        
+        
+        //Print 1 to 10 and break the loop once you find the multiplication of 7 with a message "bye, see you tomorrow".'
+
+        int count = 0;
+
+        while(count <= 10){
+
+            System.out.println(count);
+            count++;
+            if(count ==7){
+                System.out.println("bye, see you tomorrow");
+                break;
+            }
+            
+            
+        }
+
+
+       
+
+
+
+    }
+}
