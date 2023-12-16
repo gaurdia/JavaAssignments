@@ -1,0 +1,74 @@
+package com.Examples;
+
+import java.util.Arrays;
+
+public class ArrayExamples {
+
+
+	public static void main(String[] args) {
+		 //1.WAP to delete a specific number from the given array.
+
+		
+		
+		int[] a1= {1,4,5,2,3,22,31,2};
+		int[] a2= new int [a1.length];
+		
+		for(int i=0;i<a1.length;i++) {
+			if(a1[i]!=22) {
+				
+				a2[i]=a1[i];
+			}
+				
+				 
+			}
+			System.out.println(Arrays.toString(a2));
+		
+		
+		
+		//2. Write a program to create a static Array, having following cricket data:
+			
+			
+	    Object[] player1 = {"divya", 25, "ateam",26/12/1997,"female",50.00};
+  Object[] player2 = {"ram", 26, "bteam",26/02/1994,"male",25.00};
+     Object[] player3 = {"suesh", 25, "cteam",12/12/1996,"male",75.00};
+    Object[] player4 = {"nandhu", 26, "ateam",24/12/1992,"female",100.00};  
+    System.out.println(Arrays.toString(player1));
+    System.out.println(Arrays.toString(player2));
+
+    System.out.println(Arrays.toString(player3));
+    System.out.println(Arrays.toString(player4));
+
+    
+    //3. You need to do Concatenation of Array
+
+	/*
+	 * Input: nums = [1,2,1] Output: [1,2,1,1,2,1] Explanation: The array ans is
+	 * formed as follows: - ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]
+	 * - ans = [1,2,1,1,2,1]
+	 *
+	 */
+    
+    
+    int[] num = {1,2,1};
+    int[] num1= {1,2,1};
+	/*
+	 * int len1= num.length; int len2= num1.length;
+	 */
+    int[] num3= new int[num.length+num1.length];//[6] declares length
+    
+  
+
+	for (int i=0;i<num.length;i++) {
+		num3[i]=num[i];  //[1,2,1,0,0,0]
+	}
+	for (int i=0;i<num1.length;i++) {
+		num3[i+num.length]=num1[i];   // [1,2,1,1,2,1]
+		
+	}
+	
+	System.out.println(Arrays.toString(num3));
+	
+	}
+
+}
+
